@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: auto;
+}
+
+.menu{
+    min-height: 100vh;
+    background-color: rgb(7, 26, 40);
+    display: grid;
+    grid-template-rows: 10% 5% 50% 20% 10%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "logo logo"
+                         "navigator navigator"
+                         "image description"
+                         "review review"
+                         "footer footer";                    
+    grid-gap: 1px;
+    width: calc(100% - 2px);
+}
+
+.head{
+    grid-area: logo;
+    background-color: #223a5e;
+}
+
+.navigator{
+    grid-area: navigator;
+    background-color: #1b2e4b ;
+}
+
+.image{
+    grid-area: image;
+    background-color: #365c96;
+}
+
+.description{
+    grid-area: description;
+    background-color: #365c96;
+}
+
+.review{
+    grid-area: review;
+    background-color: #c7d5eb;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #142338;
+}
+
+@media (max-width: 600px) {
+    .menu{
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 50px 400px 400px 400px 100px  ;
+    grid-template-areas:    "logo " 
+                            "navigator" 
+                            "image"
+                            "description"
+                            "review"
+                            "footer";
+    grid-gap: 5px;
+    width: calc(100% - 20px);
+    }
+}
