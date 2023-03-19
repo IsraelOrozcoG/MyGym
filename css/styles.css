@@ -9,7 +9,7 @@
     background-color: rgb(7, 26, 40);
     display: grid;
     /*grid-template-rows: 10% 5% 50% 20% 10%;*/
-    grid-template-rows: 150px 50px 500px  350px 150px;
+    grid-template-rows: 100px 50px 500px  350px 150px;
     grid-template-columns: 50% 50%;
     grid-template-areas: "logo logo"
                          "navigator navigator"
@@ -35,14 +35,13 @@
     justify-content: flex-start;
     align-items: center;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
-    position: fixed;
-    width: 100%;
-    top:100px;
+    position: sticky;
+    top:0;
 }
 
 .navigator>a{
     
-   /* background-color:#365c96;*/
+
     flex-direction: column;
     padding: 15px;
     color:#000;
@@ -50,8 +49,7 @@
 }
 
 .navigator a:hover {
-    background-color: #c7d5eb;
-  
+    background-color: #c7d5eb;  
     
   }
   
@@ -93,13 +91,10 @@
 
 .presentacion {
         width: 100%;
-        height: 100%;
-    
-    animation-name: prototype;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    
-    
+        height: 100%;    
+        animation-name: prototype;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;        
 }
 
 @keyframes prototype {
@@ -128,6 +123,21 @@
 .footer{
     grid-area: footer;
     background-color: #142338;
+    color:#c7d5eb;
+    
+    
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.social>img{
+    width: 25px;
+    height: 25px;
+    
 }
 
 @media (max-width: 600px) {
@@ -136,7 +146,7 @@
     min-height: 100vh;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100px 50px 400px 400px 400px 100px  ;
+    grid-template-rows: 100px 50px 400px 400px 400px 150px  ;
     grid-template-areas:    "logo " 
                             "navigator" 
                             "description"
