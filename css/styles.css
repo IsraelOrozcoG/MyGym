@@ -87,6 +87,9 @@
 .review{
     grid-area: review;
     background-color: #c7d5eb;
+    display:flex;
+    align-items: center;
+    
 }
 
 
@@ -100,11 +103,13 @@
     padding: 2px 16px;
   }
 
-  card {
+  .card {
+    
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
-
+    width: 25%;
+    margin:1%;
   }
   
   /* Add rounded corners to the top left and the top right corner of the image */
