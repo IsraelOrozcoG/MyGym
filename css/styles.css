@@ -100,7 +100,9 @@
     
 }
 
-
+.nutriments>ul{
+    list-style: none;
+}
 
 .nutriments>ul>li{
    /* display: flex;
@@ -155,6 +157,10 @@
         animation-name: prototype;
         animation-duration: 20s;
         animation-iteration-count: infinite;        
+}
+
+.presentacion>img {
+    height: 100%;
 }
 
 @keyframes prototype {
