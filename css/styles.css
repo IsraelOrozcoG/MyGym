@@ -97,10 +97,13 @@
     height: 100%;
     display: flex;
     flex-direction: column; 
+    justify-content: space-evenly;
     
 }
 
 .nutriments>ul{
+    display: flex;
+    flex-direction: column; 
     list-style: none;
 }
 
